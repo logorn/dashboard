@@ -12,7 +12,9 @@ import { InMemoryDataService }  from './in-memory-data.service';
 import { ChartModule } from 'angular2-highcharts';
 
 import { AppComponent }         from './app.component';
-import { DashboardComponent }   from './pages/dashboard/dashboard.component';
+import { VendasDashboardComponent }   from './pages/dashboard/vendas.component';
+import { RHDashboardComponent }   from './pages/dashboard/rh.component';
+import { TecnologiaDashboardComponent }   from './pages/dashboard/tecnologia.component';
 import { HeroesComponent }      from './heroes.component';
 import { HeroDetailComponent }  from './hero-detail.component';
 import { HeroService }          from './hero.service';
@@ -29,7 +31,9 @@ import { HeroSearchComponent }  from './hero-search.component';
   ],
   declarations: [
     AppComponent,
-    DashboardComponent,
+    VendasDashboardComponent,
+    RHDashboardComponent,
+    TecnologiaDashboardComponent,
     HeroDetailComponent,
     HeroesComponent,
     HeroSearchComponent

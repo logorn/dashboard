@@ -16,7 +16,9 @@ var angular_in_memory_web_api_1 = require("angular-in-memory-web-api");
 var in_memory_data_service_1 = require("./in-memory-data.service");
 var angular2_highcharts_1 = require("angular2-highcharts");
 var app_component_1 = require("./app.component");
-var dashboard_component_1 = require("./pages/dashboard/dashboard.component");
+var vendas_component_1 = require("./pages/dashboard/vendas.component");
+var rh_component_1 = require("./pages/dashboard/rh.component");
+var tecnologia_component_1 = require("./pages/dashboard/tecnologia.component");
 var heroes_component_1 = require("./heroes.component");
 var hero_detail_component_1 = require("./hero-detail.component");
 var hero_service_1 = require("./hero.service");
@@ -38,7 +40,9 @@ AppModule = __decorate([
         ],
         declarations: [
             app_component_1.AppComponent,
-            dashboard_component_1.DashboardComponent,
+            vendas_component_1.VendasDashboardComponent,
+            rh_component_1.RHDashboardComponent,
+            tecnologia_component_1.TecnologiaDashboardComponent,
             hero_detail_component_1.HeroDetailComponent,
             heroes_component_1.HeroesComponent,
             hero_search_component_1.HeroSearchComponent

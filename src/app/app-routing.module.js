@@ -8,12 +8,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
-var dashboard_component_1 = require("./pages/dashboard/dashboard.component");
+var vendas_component_1 = require("./pages/dashboard/vendas.component");
+var rh_component_1 = require("./pages/dashboard/rh.component");
+var tecnologia_component_1 = require("./pages/dashboard/tecnologia.component");
 var heroes_component_1 = require("./heroes.component");
 var hero_detail_component_1 = require("./hero-detail.component");
 var routes = [
-    { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-    { path: 'dashboard', component: dashboard_component_1.DashboardComponent },
+    { path: '', redirectTo: '/vendas', pathMatch: 'full' },
+    { path: 'vendas', component: vendas_component_1.VendasDashboardComponent },
+    { path: 'rh', component: rh_component_1.RHDashboardComponent },
+    { path: 'tecnologia', component: tecnologia_component_1.TecnologiaDashboardComponent },
     { path: 'detail/:id', component: hero_detail_component_1.HeroDetailComponent },
     { path: 'heroes', component: heroes_component_1.HeroesComponent }
 ];
