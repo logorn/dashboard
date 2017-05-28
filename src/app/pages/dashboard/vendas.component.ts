@@ -87,6 +87,7 @@ export class VendasDashboardComponent implements OnInit {
 		        }
 		    },
 		    yAxis: {
+		    	allowDecimals: false,
 		        title: {
 		            text: 'Quantidade'
 		        },
@@ -94,7 +95,7 @@ export class VendasDashboardComponent implements OnInit {
 		    },
 		    tooltip: {
 		        headerFormat: '<b>{series.name}</b><br>',
-		        pointFormat: '{point.x:%e. %b}: {point.y:.2f} m'
+		        pointFormat: '{point.x:%e. %b}: {point.y} m'
 		    },
 
 		    plotOptions: {
@@ -226,16 +227,16 @@ export class VendasDashboardComponent implements OnInit {
 		        type: 'column'
 		    },
 		    title: {
-		        text: 'Quantidade de Vendas de Seguros com Serviços'
+		        text: 'Meta de Vendas por Corretor'
 		    },
 		    subtitle: {
-		        text: 'Vendas em Cidades Mais Vendidas'
+		        text: 'Vendas de seguros de automóveis e casas'
 		    },
 		    xAxis: {
 		        categories: [
-		            'São Paulo',
-		            'Rio de Janeiro',
-		            'Campinas'
+		            'Dayane Calderon',
+		            'Thais Fernandes',
+		            'Jessica Andrade'
 		        ]
 		    },
 		    yAxis: [{
@@ -263,28 +264,28 @@ export class VendasDashboardComponent implements OnInit {
 		        }
 		    },
 		    series: [{
-		        name: 'Seguro de Automóvel',
+		        name: 'Meta de Seguro de Automóvel',
 		        color: 'rgba(165,170,217,1)',
-		        data: [150, 73, 20],
+		        data: [150, 150, 75],
 		        pointPadding: 0.3,
 		        pointPlacement: -0.2
 		    }, {
-		        name: 'Seguro de Automóvel com Seviços',
+		        name: 'Seguro de Automóvel',
 		        color: 'rgba(126,86,134,.9)',
-		        data: [140, 50, 3],
+		        data: [140, 69, 12],
 		        pointPadding: 0.4,
 		        pointPlacement: -0.2
 		    }, {
-		        name: 'Seguro de Casa',
+		        name: 'Meta Seguro de Casa',
 		        color: 'rgba(248,161,63,1)',
-		        data: [183, 178, 198],
+		        data: [100, 100, 50],
 		        pointPadding: 0.3,
 		        pointPlacement: 0.2,
 		        yAxis: 1
 		    }, {
-		        name: 'Seguro de Casa com Serviços',
+		        name: 'Seguro de Casa',
 		        color: 'rgba(186,60,61,.9)',
-		        data: [150, 110, 73],
+		        data: [112, 135, 83],
 		        pointPadding: 0.4,
 		        pointPlacement: 0.2,
 		        yAxis: 1
@@ -292,6 +293,34 @@ export class VendasDashboardComponent implements OnInit {
 		}
 
 		this.columnGroupedOptions = {
+		    series: [{
+		        name: 'Inspeções Solicitadas',
+		        data: [9457, 8451, 12546, 13201, 12901]
+		    }, {
+		        name: 'Inspeções Executadas',
+		        data: [9392, 8411, 10457, 10504, 11403]
+		    }],
+		    chart: {
+		        type: 'column'
+		    },
+		    title: {
+		        text: 'Inspeções Solicitadas x Inspeções Executadas'
+		    },
+		    yAxis: {
+		        allowDecimals: false,
+		        title: {
+		            text: 'Unidades'
+		        }
+		    },
+		    xAxis: {
+		        categories: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio'],
+		        title: {
+		            text: null
+		        }
+		    }
+		}
+
+		/*this.columnGroupedOptions = {
 
 		    chart: {
 		        type: 'column'
@@ -344,7 +373,7 @@ export class VendasDashboardComponent implements OnInit {
 		        data: [305, 457, 478, 413, 354],
 		        stack: 'feminino'
 		    }]
-		}
+		}*/
 
 		this.simpleColumnOptions = {
 		    chart: {
