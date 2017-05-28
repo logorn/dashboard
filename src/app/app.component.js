@@ -9,14 +9,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'Dashboard';
+        this.title = 'Dashboard Gerencial';
     }
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n    <h1>{{title}}</h1>\n    <nav>\n      <a routerLink=\"/vendas\" routerLinkActive=\"active\">Vendas</a>\n      <a routerLink=\"/rh\" routerLinkActive=\"active\">Recursos Humanos</a>\n      <a routerLink=\"/tecnologia\" routerLinkActive=\"active\">Tecnologia</a>\n    </nav>\n    <router-outlet></router-outlet>\n  ",
+        template: "\n    <h1>{{title}}</h1>\n    <nav>\n      \n    </nav>\n    <router-outlet></router-outlet>\n  ",
         styleUrls: ['./app.component.css']
     })
 ], AppComponent);
