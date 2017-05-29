@@ -390,14 +390,14 @@ var VendasDashboardComponent = (function () {
             yAxis: {
                 min: 0,
                 title: {
-                    text: 'Contratos'
+                    text: 'Contratos (milhares)'
                 }
             },
             legend: {
                 enabled: false
             },
             tooltip: {
-                pointFormat: 'Contratos Impressos: <b>{point.y:.1f}</b>'
+                pointFormat: 'Contratos Impressos: <b>{point.y:.1f} mil</b>'
             },
             series: [{
                     name: 'Contratos Impressos',
