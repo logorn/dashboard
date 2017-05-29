@@ -374,6 +374,9 @@ var VendasDashboardComponent = (function () {
             title: {
                 text: 'Quantidade de Impressões de Contratos por Mês'
             },
+            subtitle: {
+                text: 'Impressões realizadas no último ano'
+            },
             xAxis: {
                 type: 'category',
                 labels: {
