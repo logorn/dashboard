@@ -108,6 +108,7 @@ export class RHDashboardComponent implements OnInit {
 		        // of 1970/71 in order to be compared on the same x axis. Note
 		        // that in JavaScript, months start at 0 for January, 1 for February etc.
 		        data: [
+		        	[Date.UTC(2016, 12, 1), 39980],
 		            [Date.UTC(2017, 1, 1), 40230],
 		            [Date.UTC(2017, 2, 1), 41231],
 		            [Date.UTC(2017, 3, 1), 39291],
@@ -124,6 +125,7 @@ export class RHDashboardComponent implements OnInit {
 		    }, {
 		        name: 'Seguro de Vida',
 		        data: [
+		            [Date.UTC(2016, 12, 1), 37130],
 		            [Date.UTC(2017, 1, 1), 37230],
 		            [Date.UTC(2017, 2, 1), 39231],
 		            [Date.UTC(2017, 3, 1), 36291],
@@ -140,6 +142,7 @@ export class RHDashboardComponent implements OnInit {
 		    }, {
 		        name: 'Seguro de Celular',
 		        data: [
+		        	[Date.UTC(2016, 12, 1), 35930],
 		            [Date.UTC(2017, 1, 1), 36230],
 		            [Date.UTC(2017, 2, 1), 38231],
 		            [Date.UTC(2017, 3, 1), 37291],
